@@ -1,0 +1,233 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.space {
+  letter-spacing: 2px;
+}
+
+p {
+  color: #7581a1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+h1 {
+  font-size: 80px;
+  color: #192b59;
+  font-weight: 600;
+}
+
+span {
+  display: block;
+  color: #1085e4;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav  {
+  font-size: 12px;
+  color: #6e7ea9;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.btn-free {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #1085e4;
+}
+
+.grid h2 {
+  color: #192b59;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.grid h2 span {
+  display: block;
+  color: #1085e4;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.grid-item h3 {
+  color: #192b59;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.grid-item a {
+  color: #1085e4;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.grid p span {
+  display: inline;
+  color: #192b59;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0px;
+}
+
+.grid p:last-child {
+  color: #1085e4;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-header .getlearn a:first-child {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: #1085e4;
+  font-weight: bold;
+}
+
+.page-header .getlearn a {
+  font-weight: bold;
+  color: #7e8bae;
+  background-color: #cbdbe8;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.page-subscribe h2 {
+  color: #bbb;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.page-subscribe p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #dfe8ff;
+}
+
+.page-subscribe input {
+  color: #dfe8ff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-subscribe botton {
+  background-color: #1085e4;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.page-software h2 {
+  color: #192b59;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.page-software dl dd {
+  color: #7581a1;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-software dl dt {
+  font-weight: 700;
+  font-size: 16px;
+  color: #5a6789;
+}
+
+.page-stat h2 {
+  color: #192b59;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.page-stat h2 span {
+  display: block;
+  color: #1085e4;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.page-stat span {
+  color: #bacbdc;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.page-stat ul li {
+  color: #1085e4;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  list-style: none;
+  letter-spacing: 2px;
+}
+
+.page-app h2 {
+  color: #192b59;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.page-app .av {
+  color: #c4d2dd;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.page-analytics h2 {
+  color: #192b59;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.page-analytics a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #1085e4;
+  text-transform: uppercase;
+}
+
+.page-easy h2 {
+  color: #192b59;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.page-easy a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #1085e4;
+  text-transform: uppercase;
+}
+
+.page-screen h2 {
+  letter-spacing: 3px;
+  color: #192b59;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.grid-item:-child {
+  background-color: blue;
+}
