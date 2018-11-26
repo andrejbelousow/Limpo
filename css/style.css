@@ -122,7 +122,7 @@ span {
   font-weight: 400;
 }
 
-.page-subscribe botton {
+.page-subscribe button {
   background-color: #1085e4;
   font-weight: 700;
   font-size: 14px;
@@ -228,6 +228,155 @@ span {
   font-weight: 600;
 }
 
-.grid-item:-child {
-  background-color: blue;
+.page-clients h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  background-color: #1085e4;
+}
+
+.box-clients .name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000958;
+}
+
+.box-clients .position {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1085e4;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.page-plan h2 {
+  color: #192b59;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.box-price-item h3 {
+  color: #000958;
+  font-weight: 700;
+  font-size: 70px;
+}
+
+.box-price-item span {
+  display: inline;
+}
+
+.box-price-item p {
+  color: #3496ff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.box-price-item ul {
+  color: #8085b1;
+  font-size: 14px;
+  font-weight: 400;
+  list-style: none;
+}
+
+.box-price-item a {
+  color: #8085b1;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.active ul {
+  color: #fff;
+  background-color: #192b59;
+}
+
+.active h3 {
+  color: #fff;
+  background-color: #192b59;
+}
+
+.active h3 span:first-child {
+  color: #fff;
+}
+
+.active h3 span {
+  color: #7b8ab2;
+}
+
+.active p {
+  color: #fff;
+  background-color: #192b59;
+}
+
+.active a {
+  color: #fff;
+  background-color: #3496ff;
+}
+
+.box-price-item:nth-child(3) h3 span:last-child {
+  color: #7b8ab2;
+}
+
+.box-price-item:nth-child(3) h3 span {
+  color: #192b59;
+}
+
+.page-team h2 span {
+  color: #85c8ff;
+}
+
+.page-team h2 {
+  background-color: #1a88e1;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.box-team p {
+  color: #192b59;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.box-team div p:first-child {
+  color: #1a88e1;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.page-form h2 {
+  color: #192b59;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.page-form input, textarea {
+  color: #8995b3;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-form button {
+  color: #fff;
+  background-color: #1085e4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.footer p {
+  color: #b6bae0;
+}
+
+.footer a {
+  color: #1085e4;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
