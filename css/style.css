@@ -16,6 +16,7 @@ body {
 
 .logo {
   background-image: url(../images/Logo.png);
+  background-position: center;
   width: 181px;
   height: 50px;
   display: block;
@@ -42,6 +43,7 @@ body {
   height: 726px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .nav > li {
@@ -369,6 +371,7 @@ span {
 .software-pic {
   background-image: url(../images/backgrounds/Software-bg3.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: 100% 100%;
   position: absolute;
   height: 986px;
@@ -381,6 +384,7 @@ span {
   display: block;
   background-image: url(../images/icon.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-position: -24px 0;
   width: 116px;
   height: 86px;
@@ -504,6 +508,7 @@ span {
 .page-app-list>li>a {
   background-image: url(../images/app-icon.png);
   background-repeat: no-repeat;
+  background-position: center;
   display: block;
   width: 182px;
   height: 78px;
@@ -591,12 +596,6 @@ span {
   margin-bottom: 20px;
 }
 
-.page-clients {
-  background-image: url(../images/backgrounds/Clients-bg.png);
-  background-repeat: no-repeat;
-  padding-top: 26px;
-  margin-top: 119px;
-}
 
 .page-clients h2 {
   color: #fff;
@@ -613,18 +612,22 @@ span {
   letter-spacing: 3.5px;
 }
 
-.box-clients .name {
+.box-clients-item .name {
   font-size: 22px;
   font-weight: 600;
   color: #000958;
+  margin-bottom: 0;
+  letter-spacing: -0.6px;
+  line-height: 1.1;
 }
 
-.box-clients .position {
+.box-clients-item .position {
   font-size: 14px;
   font-weight: 700;
   color: #1085e4;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .page-plan {
@@ -664,6 +667,7 @@ span {
   width: 60px;
   height: 100%;
   background-image: url(../images/backgrounds/page-price-item-bg.png);
+  background-position: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -826,6 +830,7 @@ span {
   background-image: url(../images/backgrounds/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 53px 0 332px 0;
   position: relative;
 }
@@ -834,6 +839,7 @@ span {
   background-image: url(../images/backgrounds/Company-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   margin-bottom: 102px;
 }
 
@@ -853,6 +859,7 @@ span {
   background-image: url(../images/Token.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 58px;
   flex-basis: 198px;
 }
@@ -861,6 +868,7 @@ span {
   background-image: url(../images/Magneto.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   flex-basis: 200px;
   height: 69px;
 }
@@ -869,6 +877,7 @@ span {
   background-image: url(../images/Boohoo.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   flex-basis: 201px;
   height: 47px;
 }
@@ -877,6 +886,7 @@ span {
   background-image: url(../images/Fractal.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   flex-basis: 200px;
   height: 69px;
 }
@@ -961,6 +971,7 @@ span {
   background-image: url(../images/backgrounds/Stat-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 121px 0 143px 0;
 }
 
@@ -968,6 +979,56 @@ span {
   padding: 121px 0 143px 0;
   background-image: url(../images/backgrounds/Stat2-bg.png);
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-clients {
+  padding: 43px 0 0 0;
+  margin-top: 120px;
+  position: relative;
+}
+
+.page-clients::before {
+  content: '';
+  display: block;
+  background-image: url(../images/backgrounds/Clients-bg.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.box-clients {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 78px;
+}
+
+.box-clients-item {
+  background-color: #fff;
+  padding: 21px 42px;
+  border-radius: 10px;
+  flex-basis: 31.5%;
+  box-sizing: border-box;
+  box-shadow: 0 9px 20px #f4f4f4;
+}
+
+.box-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box-info>div {
+  padding-left: 19px;
+}
+
+.box-clients-item>p {
+  font-size: 14px;
+  margin-bottom: 2px;
 }
 
 .page-box-text {
