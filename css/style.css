@@ -436,6 +436,7 @@ span {
 .page-stat {
   padding: 116px 0 102px 0;
   background-color: #edf6ff;
+  position: relative;
 }
 
 .page-stat h2 {
@@ -480,6 +481,28 @@ span {
   list-style: none;
   letter-spacing: 2px;
   text-align: center;
+}
+
+.object-circle {
+  background-image: url(../images/circle.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  width: 413px;
+  height: 758px;
+  left: 0px;
+  bottom: -363px;
+}
+
+.object-square {
+  background-image: url(../images/square.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  width: 569px;
+  height: 661px;
+  top: -198px;
+  right: 0;
 }
 
 .page-app h2 {
@@ -777,17 +800,17 @@ span {
 .page-team h2 span {
   color: #85c8ff;
   font-size: 18px;
+  margin-bottom: 21px;
 }
 
 .page-team h2 {
-  background-color: #1a88e1;
   color: #fff;
   font-size: 40px;
   font-weight: 600;
-  text-align: center;
+
 }
 
-.box-team p {
+.box-team-item p {
   color: #192b59;
   font-size: 26px;
   font-weight: 600;
@@ -809,14 +832,6 @@ span {
   background-color: #aeb1b4;
   color: #fff;
   border: 1px solid #aeb1b4;
-}
-
-.box-team div p:first-child {
-  color: #1a88e1;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 .page-form h2 {
@@ -984,7 +999,7 @@ span {
 
 .page-clients {
   padding: 43px 0 0 0;
-  margin-top: 120px;
+  margin: 120px 0 77px 0;
   position: relative;
 }
 
@@ -1013,7 +1028,7 @@ span {
   border-radius: 10px;
   flex-basis: 31.5%;
   box-sizing: border-box;
-  box-shadow: 0 9px 20px #f4f4f4;
+  box-shadow: 0 5px 6px #f4f4f4;
 }
 
 .box-info {
@@ -1059,4 +1074,138 @@ span {
 .flex-page-easy>div {
   flex-basis: 54%;
   margin-left: 31px;
+}
+
+.page-team {
+  text-align: center;
+  background-image: url(../images/backgrounds/Team-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 83px 0;
+}
+
+.box-team {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 138px;
+}
+
+.box-team-item {
+  background-color: #fff;
+  box-shadow: 0 5px 6px #f4f4f4;
+  flex-basis: 31.5%;
+  position: relative;
+  padding: 194px 31px 42px 31px;
+  box-sizing: border-box;
+}
+
+.box-team-item .position {
+  font-size: 14px;
+  color: #1a88e1;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  margin-bottom: 0;
+}
+
+.box-team-item .name {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-top: 7px;
+}
+
+.box-team-item .avatar {
+  position: absolute;
+  margin: 0 auto;
+  top: -85px;
+  left: 0;
+  right: 0;
+}
+
+.box-team-item .btn-team span {
+  background-image: url(../images/btn-team.png);
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+  align-self: center;
+}
+
+.box-team-item .btn-more:focus {
+  outline: none;
+}
+
+.box-team-item .btn-team:hover {
+  background-color: #1a88e1;
+}
+
+.box-team-item .btn-more:hover span {
+  background-position: -5px -33px;
+}
+
+.box-team-item .btn-team {
+  background-color: #f3f3f3;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  border: none;
+  transition: 0.3s;
+  padding: 0;
+  display: flex;
+}
+
+.social-team {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-team-item .btn-more span {
+  background-position: -5px -8px;
+  width: 20px;
+  height: 20px;
+}
+
+.box-team-item .btn-fb span {
+  background-position: -42px -9px;
+  width: 14px;
+  height: 20px;
+}
+
+.box-team-item .btn-tw span {
+  background-position: -74px -10px;
+  width: 14px;
+  height: 20px;
+}
+
+.box-team-item .btn-be span {
+  background-position: -98px -11px;
+  width: 18px;
+  height: 20px;
+}
+
+.box-team-item .btn-web span {
+  background-position: -125px -10px;
+  width: 16px;
+  height: 20px;
+}
+
+.box-team-item .btn-fb:hover span {
+  background-position: -42px -35px;
+}
+
+.box-team-item .btn-tw:hover span {
+  background-position: -74px -35px;
+}
+
+.box-team-item .btn-be:hover span {
+  background-position: -98px -35px;
+}
+
+.box-team-item .btn-web:hover span {
+  background-position: -125px -35px;
 }
