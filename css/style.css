@@ -477,6 +477,8 @@ span {
 .list-stat {
   display: flex;
   justify-content: space-around;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 .page-stat ul li {
@@ -1053,6 +1055,7 @@ span {
 .box-clients {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 78px;
 }
 
@@ -1060,7 +1063,7 @@ span {
   background-color: #fff;
   padding: 21px 42px;
   border-radius: 10px;
-  flex-basis: 31.5%;
+  flex-basis: 349px;
   box-sizing: border-box;
   box-shadow: 0 5px 6px #f4f4f4;
 }
@@ -1367,6 +1370,7 @@ span {
   align-items: center;
   max-width: 1112px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .social {
@@ -1463,5 +1467,61 @@ span {
   .box-subscribe img {
     margin: 0 auto 50px;
     max-width: 170px;
+  }
+
+  .box-clients-item {
+    flex-basis: 349px;
+    text-align: center;
+    padding: 21px 19px;
+    margin-bottom: 20px;
+  }
+
+  .box-clients {
+    justify-content: space-between;
+  }
+
+  .box-clients-item:last-child {
+    margin: 0 auto;
+  }
+
+  .box-clients-item>p {
+    margin-top: 0;
+  }
+
+  .page-clients h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .box-clients {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 780px) {
+  .page-stat {
+    padding: 74px 0 28px 0;
+  }
+
+  .page-stat ul li {
+    flex-basis: 35%;
+    margin-bottom: 45px;
+  }
+
+  .page-stat ul li:nth-child(3), .page-stat ul li:last-child {
+    margin-bottom: 20px;
+  }
+
+  .page-clients {
+    padding-top: 43px;
+    margin: 86px 0 77px;
+  }
+
+  .box-clients-item {
+    flex-basis: 47.5%;
+  }
+
+  .page-stat h2 {
+    margin-bottom: 25px
   }
 }
