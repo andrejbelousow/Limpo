@@ -606,7 +606,7 @@ span {
 
 .page-screen {
   background-color: #edf6ff;
-  padding: 117px 0px 0px 0px;
+  padding-top: 117px;
   text-align: center;
 }
 
@@ -1340,7 +1340,7 @@ span {
 }
 
 .contact-form .btn-primary {
-  padding: 23px 37px 23px 60px;
+  padding: 23px 37px 22px 60px;
   font-size: 12px;
   position: relative;
   max-width: 230px;
@@ -1377,7 +1377,7 @@ span {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  flex-basis: 15.73%;
+  flex-basis: 175px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1443,7 +1443,7 @@ span {
     margin-bottom: 10px;
   }
 
-  .box-subscribe>div, .box-subscribe .title-h2, span {
+  .box-subscribe>div, .box-subscribe .title-h2 span {
     flex-basis: 100%;
     text-align: center;
   }
@@ -1496,6 +1496,33 @@ span {
   .box-clients {
     margin-top: 40px;
   }
+
+  .flex-form {
+    flex-direction: column;
+  }
+
+  .page-form {
+    padding: 35px 0 46px 0;
+  }
+
+  .page-form h2 {
+    margin-bottom: 33px;
+    margin-top: 10px;
+  }
+
+  .contact-form .btn-primary {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .flex-form img {
+    margin: 0;
+  }
+
+  .page-analytics {
+    padding: 70px 0 96px;
+  }
+
 }
 
 @media (max-width: 780px) {
@@ -1513,7 +1540,7 @@ span {
   }
 
   .page-clients {
-    padding-top: 43px;
+    padding-top: 42px;
     margin: 86px 0 77px;
   }
 
@@ -1523,5 +1550,9 @@ span {
 
   .page-stat h2 {
     margin-bottom: 25px
+  }
+
+  .page-screen {
+    padding-top:65px;
   }
 }
