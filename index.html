@@ -38,6 +38,7 @@
                 <li><a class="nav-item" href="#">Team</a></li>
                 <li><a href="#" class="btn-primary btn-free">Free Trial</a></li>
             </ul>
+          <button class="btn-menu" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 34"><path d="M2,13.5H51a2,2,0,0,0,0-4H2a2,2,0,0,0,0,4Z" transform="translate(0 -9.5)"/><path d="M2,28.5H51a2,2,0,0,0,0-4H2a2,2,0,0,0,0,4Z" transform="translate(0 -9.5)"/><path d="M2,43.5H51a2,2,0,0,0,0-4H2a2,2,0,0,0,0,4Z" transform="translate(0 -9.5)"/></svg></button>
     </div>
     <div class="wrap">
             <h1>Best Software Landingpage</h1>
@@ -369,6 +370,18 @@
         </ul>
       </div>
   </div>
+  <div class="modal">
+    <button type="button" class="btn-close"><span>&times</span></button>
+    <ul class="nav-modal">
+        <li><a class="nav-item" href="#">Home</a></li>
+        <li><a class="nav-item" href="#">Features</a></li>
+        <li><a class="nav-item" href="#">Video</a></li>
+        <li><a class="nav-item" href="#">Screens</a></li>
+        <li><a class="nav-item" href="#">Pricing</a></li>
+        <li><a class="nav-item" href="#">Team</a></li>
+        <li><a href="#" class="btn-primary btn-free">Free Trial</a></li>
+    </ul>
+  </div>
   <script
 			  src="https://code.jquery.com/jquery-3.3.1.min.js"
 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -387,6 +400,12 @@
       $(".btn-thomas").click(function(){
         $(".btn-thomas").hide();
         $(".social-thomas").fadeToggle("slow");
+      });
+        $(".btn-menu").click(function(){
+          $(".modal").show()
+      });
+        $(".btn-close").click(function(){
+          $(".modal").hide()
       });
     });
   </script>
