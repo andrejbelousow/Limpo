@@ -76,10 +76,10 @@
   z-index: 1000;
   top: 30px;
   width: 100%;
+  max-width: 80%;
   text-align: center;
   background-color: #fff;
   border: 1px solid #f1f1f1;
-  max-width: 800px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -1922,10 +1922,6 @@ span {
 
 @media (max-width: 780px) {
 
-  .modal {
-    max-width: 750px;
-  }
-
   .page-stat {
     padding: 74px 0 28px 0;
   }
@@ -1983,6 +1979,14 @@ span {
 
 @media (max-width:600px) {
 
+  .modal {
+    padding: 34px 15px 25px 15px;
+  }
+
+  .nav-modal {
+    font-size: 10px;
+  }
+
   .page-header h1 {
     font-size: 40px;
     margin: 0 auto 35px auto;
@@ -2035,12 +2039,9 @@ span {
     padding: 20px 0 20px 0;
   }
 
-  .modal {
-    max-width: 530px;
-  }
-
   .btn-free {
-    padding: 14px 23px;
+    padding: 11px 15px;
+    font-size: 10px;
   }
 
   .social-flex, .box-clients, .btn-group {
@@ -2430,6 +2431,28 @@ span {
 }
 
 @media (max-width: 320px) {
+
+  .btn-free {
+    padding: 9px 12px;
+    font-size: 8px;
+  }
+
+  .nav-modal {
+    font-size: 8px;
+  }
+
+  .nav-modal li:last-child {
+    margin-top: 26px;
+  }
+
+  .nav-modal li {
+    margin-bottom: 16px;
+  }
+
+  .modal {
+    padding: 34px 15px 15px 15px;
+  }
+
   h1 {
     font-size: 32px;
   }
