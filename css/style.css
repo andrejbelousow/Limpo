@@ -163,6 +163,20 @@ h1 {
   font-weight: 600;
 }
 
+.title-h2>span {
+  font-weight: 800;
+}
+
+.title-40 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.title-40>span {
+  font-size: 18px;
+  font-weight: 800;
+}
+
 span {
   display: block;
   color: #1085e4;
@@ -173,7 +187,7 @@ span {
   margin-bottom: 31px;
 }
 
-.btn-primary {
+.btn-primary, .btn-primary-1 {
   color: #fff;
   text-transform: uppercase;
   background-color: #1085e4;
@@ -189,7 +203,7 @@ span {
   margin-bottom: 0;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary-1:hover {
   background-color: transparent;
   color: #1085e4;
   border: 1px solid #1085e4;
@@ -270,7 +284,7 @@ span {
 
 .grid-item-3 {
   grid-area: d;
-  padding-top: 65px;
+  padding-top: 48px;
 }
 
 .grid-item-4 {
@@ -293,18 +307,16 @@ span {
   grid-area: h;
 }
 
-.grid h2 {
+.grid .title-40 {
   color: #192b59;
-  font-size: 40px;
   font-weight: 700;
   text-align: left;
-  margin-top: 0;
+  margin: 0;
   line-height: 50px;
-  margin-bottom: 0;
   letter-spacing: -1.3px;
 }
 
-.grid h2 span {
+.grid .title-40 span {
   display: block;
   color: #1085e4;
   font-size: 14px;
@@ -390,10 +402,8 @@ span {
   background-position: center;
 }
 
-.page-subscribe h2 {
+.page-subscribe .title-h2 {
   color: #fff;
-  font-weight: 600;
-  font-size: 50px;
   text-align: left;
   letter-spacing: -1.6px;
   margin-bottom: 27px;
@@ -458,13 +468,15 @@ span {
 .software-pic {
   background-image: url(../images/backgrounds/Software-bg3.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
+  background-position: bottom;
+  background-size: contain;
   position: absolute;
   height: 986px;
-  width: 48.5%;
+  width: 48%;
   display: block;
   bottom: -32px;
+  left: -2%;
+  z-index: -1;
 }
 
 .settings-icon {
@@ -477,10 +489,8 @@ span {
   height: 86px;
 }
 
-.page-software h2 {
+.page-software .title-h2 {
   color: #192b59;
-  font-size: 50px;
-  font-weight: 600;
   text-align: left;
   letter-spacing: -1.2px;
   max-width: 550px;
@@ -526,22 +536,19 @@ span {
   position: relative;
 }
 
-.page-stat h2 {
+.page-stat .title-h2 {
   margin: 0 auto;
   color: #192b59;
-  font-size: 50px;
-  font-weight: 600;
   text-align: center;
   letter-spacing: -2.2px;
   max-width: 438px;
   margin-bottom: 58px;
 }
 
-.page-stat h2 span {
+.page-stat .title-h2 span {
   display: block;
   color: #1085e4;
   font-size: 16px;
-  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2.7px;
   margin-bottom: 14px;
@@ -594,10 +601,8 @@ span {
   right: 0;
 }
 
-.page-app h2 {
+.page-app .title-h2 {
   color: #192b59;
-  font-size: 50px;
-  font-weight: 600;
   text-align: left;
   letter-spacing: -1.6px;
 }
@@ -661,15 +666,11 @@ span {
 
 .page-analytics h2 {
   color: #192b59;
-  font-size: 50px;
-  font-weight: 600;
   text-align: left;
 }
 
-.page-easy h2 {
+.page-easy .title-h2 {
   color: #192b59;
-  font-size: 50px;
-  font-weight: 600;
   text-align: left;
 }
 
@@ -698,32 +699,26 @@ span {
   max-width: 100%;
 }
 
-.page-screen h2 {
+.page-screen .title-40 {
   letter-spacing: 3px;
   color: #192b59;
-  font-size: 40px;
-  font-weight: 600;
-  text-align: center;
   letter-spacing: -1.2px;
-  margin: 0 auto;
 }
 
-.page-screen>h2>span {
+.page-screen>.title-40>span {
   font-size: 18px;
   letter-spacing: 3.5px;
   margin-bottom: 20px;
 }
 
-
-.page-clients h2 {
+.page-clients .title-40 {
   color: #fff;
-  font-size: 40px;
-  font-weight: 600;
   text-align: left;
   margin-top: 50px;
   letter-spacing: -1.4px;
 }
-.page-clients h2 span {
+
+.page-clients .title-40 span {
   font-size: 18px;
   color: #85c8ff;
   margin-bottom: 19px;
@@ -753,16 +748,13 @@ span {
   margin-bottom: 120px;
 }
 
-.page-plan h2 {
+.page-plan .title-40 {
   color: #192b59;
-  font-weight: 600;
-  font-size: 40px;
   text-align: center;
-  letter-spacing: -1.5px;
   margin-bottom: 85px;
 }
 
-.page-plan h2>span {
+.page-plan .title-40>span {
   font-size: 18px;
   padding-top: 10px;
   margin-bottom: 19px;
@@ -892,17 +884,15 @@ span {
   color: #192b59;
 }
 
-.page-team h2 span {
+.page-team .title-40 {
+  color: #fff;
+  letter-spacing: -1.5px;
+}
+
+.page-team .title-40 span {
   color: #85c8ff;
   font-size: 18px;
   margin-bottom: 21px;
-}
-
-.page-team h2 {
-  color: #fff;
-  font-size: 40px;
-  font-weight: 600;
-
 }
 
 .box-team-item p {
@@ -929,10 +919,8 @@ span {
   border: 1px solid #aeb1b4;
 }
 
-.page-form h2 {
+.page-form .title-h2 {
   color: #192b59;
-  font-size: 50px;
-  font-weight: 600;
   text-align: left;
   letter-spacing: -1.5px;
   margin-bottom: 52px;
@@ -1170,13 +1158,10 @@ span {
   align-items: center;
 }
 
-.title-analytics, .title-easy {
+.title-analytics, .title-h2 {
   margin-top: 21px;
   margin-bottom: 30px;
   letter-spacing: -2px;
-}
-
-.title-easy {
   max-width: 418px;
 }
 
@@ -1329,7 +1314,7 @@ span {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 72px 0 114px 0;
+  padding: 72px 15px 114px 15px;
 }
 
 .contact-form {
@@ -1493,20 +1478,12 @@ span {
 /* MEDIA */
 
 @media (max-width: 1760px) {
+
   .screen-img {
     height: 485px;
     background-size: cover;
     top: 314px;
     max-width: 588px;
-  }
-
-  .software-pic {
-    height: 52%;
-    width: 38%;
-  }
-
-  .page-software-flex>div {
-    flex-basis: 62.5%;
   }
 
 }
@@ -1576,26 +1553,26 @@ span {
   }
 
   .page-software-flex>div {
-    flex-basis: 62.5%;
+    flex-basis: 100%;
   }
 
   .page-software {
-    padding: 76px 0;
+    padding: 45px 0;
   }
 
-  .page-software h2 {
+  .page-software .title-h2 {
     max-width: 700px;
-    text-align: center;
-  }
-
-  .page-software .settings-icon {
-    margin: 0 auto;
   }
 
   .page-software-flex p {
-    text-align: center;
     margin-bottom: 52px;
     margin-top: 52px;
+  }
+
+  .page-software-list {
+    height: 284px;
+    max-width: 800px;
+    margin-right: 50px;
   }
 
   .page-app {
@@ -1604,6 +1581,7 @@ span {
 
   .video-app img {
     width: 380px;
+    margin-left: 50px;
   }
 
   .content-app {
@@ -1618,15 +1596,21 @@ span {
   }
 
   .content-app div {
-    width: 70%;
+    flex-basis: 60%;
     margin: 0 auto;
     text-align: center;
+  }
+
+  .content-app p {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .content-app .title-h2 {
     text-align: center;
     margin-bottom: 30px;
     margin-top: 8px;
+    max-width: 100%;
   }
 
   .intro {
@@ -1642,6 +1626,51 @@ span {
     width: 340px;
     top: -141px;
   }
+
+  .flex-analytics img {
+    width: 45%;
+  }
+
+  .flex-analytics>div {
+    flex-basis: 60%;
+  }
+
+  .page-stat {
+    padding: 77px 0 77px 0;
+  }
+
+  .settings-icon {
+    display: none;
+  }
+
+  .box-team {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+   .box-team-item {
+    width: 80%;
+    margin-bottom: 124px;
+  }
+
+  .box-team-item:last-child {
+    margin-bottom: 0;
+    box-shadow: 0 5px 70px #f4f4f4;
+  }
+
+  .social-team {
+    justify-content: space-around;
+  }
+
+  .box-team-item .position {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+
+  .box-team-item .name {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 1100px) and (min-width: 600px) {
@@ -1654,6 +1683,7 @@ span {
     padding: 24px 28px;
   }
 }
+
 @media (max-width: 1050px) {
 
   .list-item {
@@ -1669,6 +1699,14 @@ span {
     padding: 50px 0 25px;
   }
 
+  .page-company {
+    margin-bottom: 70px;
+  }
+
+  .page-grid {
+    margin-bottom: 15px
+  }
+
   .grid {
     grid-template-areas: "a a"
                          "b c"
@@ -1678,7 +1716,7 @@ span {
     grid-template-columns: 1fr 1fr;
   }
 
-  .grid h2, .grid h2 span {
+  .grid .title-40, .grid .title-40 span {
     text-align: center;
     margin-bottom: 10px;
   }
@@ -1686,6 +1724,7 @@ span {
   .box-subscribe>div, .box-subscribe .title-h2 span, .box-subscribe .title-h2 {
     flex-basis: 100%;
     text-align: center;
+    max-width: 100%;
   }
 
   .box-subscribe img {
@@ -1709,6 +1748,14 @@ span {
     max-width: 170px;
   }
 
+  .page-clients::before {
+    display: none;
+  }
+
+  .page-clients {
+    background-color: #1085e4;
+  }
+
   .box-clients-item {
     flex-basis: 349px;
     text-align: center;
@@ -1728,7 +1775,7 @@ span {
     margin-top: 0;
   }
 
-  .page-clients h2 {
+  .page-clients .title-40 {
     margin-top: 0;
     text-align: center;
   }
@@ -1742,12 +1789,13 @@ span {
   }
 
   .page-form {
-    padding: 35px 0 46px 0;
+    padding: 35px 15px 46px 15px;
   }
 
-  .page-form h2 {
+  .page-form .title-h2 {
     margin-bottom: 33px;
     margin-top: 10px;
+    max-width: 100%:
   }
 
   .contact-form .btn-primary {
@@ -1757,10 +1805,118 @@ span {
 
   .flex-form img {
     margin: 0;
+    width: 56%;
   }
 
   .page-analytics {
-    padding: 70px 0 96px;
+    padding: 0;
+  }
+
+  .flex-analytics {
+    flex-direction: column;
+    padding: 67px 0;
+  }
+
+  .flex-analytics>img {
+    padding: 0;
+  }
+
+  .flex-analytics>div, .page-analytics .title-h2 {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .flex-analytics .settings-icon {
+    display: none;
+  }
+
+  .flex-analytics .page-box-text {
+    margin: 0 auto;
+    margin-bottom: 36px;
+    width: 80%;
+  }
+
+  .flex-analytics .btn-primary {
+    padding: 16px 18px;
+  }
+
+  .page-easy {
+    padding: 60px 0 70px 0;
+  }
+
+  .flex-page-easy {
+    flex-direction: column-reverse;
+  }
+
+  .flex-page-easy>img {
+    padding: 0;
+    width: 45%;
+  }
+
+  .flex-page-easy>div, .page-easy .title-h2 {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .flex-page-easy>div {
+    margin: 0;
+    flex-basis: 60%;
+  }
+
+  .flex-page-easy .btn-primary {
+    padding: 16px 18px;
+  }
+
+  .flex-page-easy .page-box-text {
+    margin: 0 auto;
+    margin-bottom: 36px;
+    width: 80%;
+  }
+
+  .box-price {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-plan {
+    margin: 0;
+    background-color: #f5faff;
+    padding-top: 45px;
+  }
+
+  .box-price {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-plan .wrap {
+    padding: 0;
+  }
+
+  .box-price-item {
+    width: 330px;
+    height: 612px;
+  }
+
+  .active {
+    width: 100%;
+  }
+
+  .box-price-item:after {
+    right: 0;
+  }
+
+  .box-price-item .btn-info {
+    padding: 17px 26px;
+  }
+
+  .active .btn-primary {
+    padding: 21px 35px;
+  }
+
+  .page-plan .title-40 {
+    margin-bottom: 45px;
+    margin-top: 0px;
   }
 }
 
@@ -1792,16 +1948,21 @@ span {
     flex-basis: 47.5%;
   }
 
-  .page-stat h2 {
+  .page-stat .title-h2 {
     margin-bottom: 25px
   }
 
   .page-screen {
-    padding-top:65px;
+    padding-top: 54px;
+    padding-bottom: 50px;
   }
 
   .box-info>img {
     width: 44px;
+  }
+
+  .page-clients {
+    margin: 0;
   }
 
   .box-clients-item .name {
@@ -1811,6 +1972,13 @@ span {
   .box-clients-item .position {
     font-size: 12px;
   }
+
+  .page-screen>img {
+    width: 70%;
+    margin: 0;
+    margin-top: 30px;
+  }
+
 }
 
 @media (max-width:600px) {
@@ -1821,7 +1989,6 @@ span {
   }
 
   .btn-group {
-    flex-direction: column;
     max-width: 330px;
     align-items: center;
     margin: 0 auto;
@@ -1842,6 +2009,23 @@ span {
     margin-bottom: 15px;
   }
 
+  .page-software-flex>div {
+    flex-basis: 100%;
+  }
+
+  .page-software-flex p {
+    margin-bottom: 40px;
+    margin-top: 35px;
+  }
+
+  .page-screen {
+    padding-top: 25px;
+  }
+
+  .page-screen>img {
+    margin-top: 20px;
+  }
+
   .box-header {
     margin-bottom: 42px;
     padding: 15px 15px 32px 15px;
@@ -1858,4 +2042,525 @@ span {
   .btn-free {
     padding: 14px 23px;
   }
+
+  .social-flex, .box-clients, .btn-group {
+    flex-direction: column;
+  }
+
+  .social {
+    width: 132px;
+    flex-basis: 0px;
+  }
+
+  .footer {
+    padding: 31px 0 57px;
+  }
+
+  .footer p {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+
+  .title-h2 {
+    font-size: 35px;
+  }
+
+  .title-40 {
+    font-size: 30px;
+  }
+
+  .page-stat .title-h2 span, .page-screen .title-40 span, .page-clients .title-40 span, .page-plan .title-40 span, .page-team .title-40 span, .page-gid .title-40 span, .page-subscribe .title-h2 span, p, dd, .page-subscribe p, .page-clients p, .box-price-item p, .box-price-item li, .page-subscribe .btn-primary
+  {
+    font-size: 12px;
+  }
+
+  p, dd, .page-subscribe p, {
+    line-height: 22px;
+  }
+
+  .page-app .av {
+    font-size: 14px;
+  }
+
+  .box-price-item h3 {
+    font-size: 50px;
+    margin-top: 40px;
+  }
+
+  .video-app img {
+    width: 276px;
+  }
+
+  .contact-form .btn-primary {
+    max-width: 170px;
+    padding: 18px 20px 18px 40px;
+  }
+
+  .contact-form .btn-primary::before {
+    left: 24px;
+  }
+
+  .active .btn-primary {
+    padding: 17px 26px;
+  }
+
+  .page-plan {
+    padding-top: 55px;
+  }
+
+  .box-clients {
+    align-items: center;
+  }
+
+  .box-clients-item {
+    width: 60%;
+    padding: 24px 32px;
+    margin-bottom: 35px;
+  }
+
+  .box-clients-item:last-child {
+    margin-bottom: 35px;
+  }
+
+  .box-info {
+    justify-content: center;
+  }
+
+  .flex-analytics .btn-primary, .flex-page-easy .btn-primary, .box-price-item .btn-info, .active .btn-primary {
+    padding: 14px 14px;
+    font-size: 10px;
+  }
+
+  .page-subscribe .btn-primary {
+    padding: 14px 22px;
+  }
+
+  .contact-form input {
+    padding: 21px 80px 21px 38px;
+    font-size: 13px;
+  }
+
+  .contact-form textarea {
+    font-size: 13px;
+  }
+
+  .subscribe-form>button {
+    top: 6px;
+    right: 10px;
+  }
+
+  .subscribe-form input {
+    padding: 19px 36px;
+    padding-right: 18px;
+    width: 100%;
+  }
+
+  input {
+    font: 13px/1 'Open Sans', sans-serif;
+  }
+
+  .box-team-item {
+    padding: 120px 15px 32px 15px;
+    width: 60%;
+  }
+
+  .social-team {
+    justify-content: space-evenly;
+  }
+
+  .box-team-item .name {
+    font-size: 26px;
+  }
+
+  .box-team-item .position {
+    font-size: 13px;
+    margin: 15px 0;
+  }
+
+  .box-team-item .avatar {
+    width: 220px;
+  }
+
+  .box-price-item {
+    height: 466px;
+  }
+
+  .box-price-item p {
+    margin-bottom: 12px;
+  }
+
+  .box-price-item li:last-child {
+    padding-top: 26px;
+  }
+
+  .object-square {
+    width: 225px;
+    top: -100px;
+  }
+
+  .object-circle {
+    width: 230px;
+    bottom: -507px;
+  }
+
+  .page-subscribe {
+    padding: 42px 0 28px;
+  }
+
+  .page-company {
+    margin-bottom: 45px;
+  }
+
+  .grid .title-40, .grid .title-40 span {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .grid-item {
+    padding-bottom: 46px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .flex-form img, .flex-page-easy>img, .flex-analytics>img {
+    display: none;
+  }
+
+  .grid {
+    grid-template-areas: "a"
+                         "b"
+                         "c"
+                         "d"
+                         "e"
+                         "f"
+                         "g"
+                         "h";
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .grid-item {
+    max-width: 390px;
+  }
+
+  .grid-item h3 {
+    font-size: 18px;
+  }
+
+  .grid-text {
+    text-align: center;
+  }
+
+  .page-software-flex>div {
+    flex-basis: 95%;
+  }
+
+  .page-software {
+    padding: 35px 0;
+  }
+
+  .page-software-flex p {
+    margin-top: 35px;
+  }
+
+  .page-stat {
+    padding: 52px 0 28px 0;
+  }
+
+  .page-stat ul li {
+    font-size: 11px;
+  }
+
+  .page-stat span {
+    font-size: 44px;
+  }
+
+  .object-circle {
+    width: 161px;
+    bottom: -530px;
+  }
+
+  .object-square {
+    width: 190px;
+    top: -81px;
+  }
+
+  .page-app {
+    padding: 71px 0 26px 0;
+  }
+
+  .page-easy, .flex-analytics {
+    padding: 22px 0 56px;
+  }
+
+  .page-screen>img {
+    width: 90%;
+  }
+
+  .video-app img {
+    width: 260px;
+  }
+
+  .content-app p, .page-box-text {
+    width: 90%;
+  }
+
+  .box-info {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .box-info>div {
+    padding-left: 0;
+  }
+
+  .page-clients {
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .box-clients-item {
+    margin-bottom: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .box-clients-item .name {
+    margin-top: 6px;
+  }
+
+  .box-clients-item {
+    width: 100%;
+    padding: 24px 32px 10px 24px;
+    border-bottom: 4px solid #85c8ff;
+  }
+
+  .box-clients-item:last-child {
+    border-bottom: none;
+  }
+
+  .box-price-item:after {
+    display: none;
+  }
+
+  .page-plan .title-40 {
+    margin-bottom: 0;
+  }
+
+  .page-team .wrap, .page-clients .wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-team {
+    padding-bottom: 40px;
+  }
+
+  .box-team {
+    margin-top: 50px;
+  }
+
+  .box-team-item {
+    padding: 276px 15px 36px 15px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .box-team-item:last-child {
+    box-shadow: none;
+    padding-bottom: 25px;
+  }
+
+  .box-team-item .avatar {
+    top: 30px;
+    width: 260px;
+  }
+
+  .box-team-item .name {
+    font-size: 24px;
+  }
+
+  .box-team-item .position {
+    font-size: 12px;
+    margin: 15px 0;
+  }
+
+  .contact-form .btn-primary {
+    max-width: 157px;
+    font-size: 11px;
+  }
+
+  .contact-form .btn-primary::before {
+    left: 20px;
+  }
+
+  .btn-menu svg {
+    width: 37px;
+    height: 24px;
+  }
+
+  .list-company {
+    justify-content: center;
+  }
+
+  .subscribe-form>button {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-subscribe .btn-primary {
+    width: auto;
+    font-size: 10px;
+  }
+
+  .subscribe-form input {
+    margin-bottom: 15px;
+    padding: 19px 36px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .box-header {
+    margin-bottom: 15px;
+  }
+
+  .btn-group .btn-secondary, .btn-group .btn-primary, .flex-analytics .btn-primary, .flex-page-easy .btn-primary, .box-price-item .btn-info, .active .btn-primary, .contact-form .btn-primary  {
+    font-size: 8px;
+  }
+
+  input {
+    font-size: 11px;
+  }
+
+  .btn-group .btn-secondary, .btn-group .btn-primary {
+    padding: 15px 12px;
+  }
+
+  .box-price-item .btn-info, .active .btn-primary {
+    padding: 11px 12px;
+  }
+
+  .title-h2 {
+    font-size: 31px;
+  }
+
+  .title-40 {
+    font-size: 26px;
+  }
+
+  dt {
+    font-size: 14px;
+  }
+
+  .page-stat .title-h2 span, .page-screen .title-40 span, .page-clients .title-40 span, .page-plan .title-40 span, .page-team .title-40 span, .page-gid .title-40 span, .page-subscribe .title-h2 span
+  {
+    font-size: 10px;
+  }
+
+  .box-team-item .name {
+    font-size: 22px;
+  }
+
+  .box-team-item .position {
+    margin-bottom: 10px
+  }
+
+  .contact-form input, .contact-form textarea, .subscribe-form input {
+    font-size: 11px;
+  }
+
+  .contact-form input {
+    padding: 18px 80px 18px 38px;
+  }
+
+  .contact-form .btn-primary {
+    max-width: 136px;
+    padding: 16px 20px 16px 40px;
+  }
+
+  .flex-analytics {
+    padding: 29px 0 55px;
+  }
+
+  .page-easy {
+    padding: 40px 0 55px;
+  }
+
+  .flex-analytics .btn-primary, .flex-page-easy .btn-primary {
+    padding: 12px 12px;
+  }
+
+  .box-price-item li {
+    font-size: 11px;
+  }
+
+  .box-team-item .btn-team {
+    width: 45px;
+    height: 45px;
+  }
+
+  .page-form {
+    padding: 35px 15px 35px 15px;
+  }
+
+  .subscribe-form input {
+    padding: 15px 36px;
+  }
+
+  .video-app img {
+    width: 224px;
+    margin-left: 0;
+  }
+
+  .page-screen>img {
+    margin-top: 10px;
+  }
+
+  .box-subscribe img {
+    margin: 0 auto 30px;
+    max-width: 150px;
+  }
+
+  .object-circle {
+    width: 125px;
+    bottom: -557px;
+  }
+
+  .object-square {
+    width: 160px;
+    top: -68px;
+  }
+
+  .box-team-item .avatar {
+    top: 76px;
+    width: 216px;
+  }
+
+  .page-subscribe .btn-primary{
+    font-size: 8px;
+    padding: 12px 19px;
+  }
+
+  .page-plan {
+    padding-top: 45px;
+  }
+
+  .box-team-item {
+    padding: 276px 15px 0 15px;
+  }
+
 }
