@@ -1322,6 +1322,8 @@ span {
   flex-direction: column;
 }
 
+$(".switch").children().each(function()($(this).off()));
+
 .contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {color:#8995b3;}
 .contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {color:#8995b3;}
 .contact-form input:-moz-placeholder, .contact-form textarea:-moz-placeholder {color:#8995b3;}
@@ -1520,8 +1522,7 @@ span {
 
 }
 
-@media (max-width: 1100px) {
-
+@media (max-width: 1200px) {
   .nav, .screen-img, .software-pic {
     display: none;
   }
@@ -1547,6 +1548,9 @@ span {
   .box-header {
     margin-bottom: 170px;
   }
+}
+
+@media (max-width: 1100px) {
 
   .page-software-flex {
     justify-content: center;
