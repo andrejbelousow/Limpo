@@ -1548,9 +1548,6 @@ $(".switch").children().each(function()($(this).off()));
   .box-header {
     margin-bottom: 170px;
   }
-}
-
-@media (max-width: 1100px) {
 
   .page-software-flex {
     justify-content: center;
@@ -1578,6 +1575,9 @@ $(".switch").children().each(function()($(this).off()));
     max-width: 800px;
     margin-right: 50px;
   }
+}
+
+@media (max-width: 1100px) {
 
   .page-app {
     padding: 82px 0 42px 0;
@@ -1758,6 +1758,7 @@ $(".switch").children().each(function()($(this).off()));
 
   .page-clients {
     background-color: #1085e4;
+    margin: 120px 0 0 0;
   }
 
   .box-clients-item {
@@ -1885,7 +1886,7 @@ $(".switch").children().each(function()($(this).off()));
   .page-plan {
     margin: 0;
     background-color: #f5faff;
-    padding-top: 45px;
+    padding-top: 85px;
   }
 
   .box-price {
