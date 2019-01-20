@@ -36,7 +36,7 @@
 }
 
 .btn-menu svg {
-  width: 35 px;
+  width: 35px;
   height: 35px;
   fill: #192b59;
 }
@@ -529,6 +529,13 @@ span {
 .page-software-list::-webkit-scrollbar { width: 4px; height: 0;}
 .page-software-list::-webkit-scrollbar-track-piece { background-color: #f3f6ff;}
 .page-software-list::-webkit-scrollbar-thumb { height: 0; background-color: #1085e4; border-radius: 10px;}
+.page-software-list::-moz-scrollbar { width: 4px; height: 0;}
+.page-software-list::-moz-scrollbar-track-piece { background-color: #f3f6ff;}
+.page-software-list::-moz-scrollbar-thumb { height: 0; background-color: #1085e4; border-radius: 10px;}
+.page-software-list:-moz-scrollbar { width: 4px; height: 0;}
+.page-software-list:-moz-scrollbar-track-piece { background-color: #f3f6ff;}
+.page-software-list:-moz-scrollbar-thumb { height: 0; background-color: #1085e4; border-radius: 10px;}
+
 
 .page-stat {
   padding: 116px 0 102px 0;
@@ -1502,8 +1509,7 @@ $(".switch").children().each(function()($(this).off()));
   }
 
   .intro {
-    font-size: 180px;
-    left: 265px;
+    display: none;
   }
 
   .page-team {
@@ -1654,8 +1660,13 @@ $(".switch").children().each(function()($(this).off()));
   }
 
    .box-team-item {
-    width: 80%;
+    width: 376px;
     margin-bottom: 124px;
+    padding: 146px 31px 42px 31px;
+  }
+
+  .box-team-item .avatar {
+    width: 236px;
   }
 
   .box-team-item:last-child {
@@ -1740,7 +1751,7 @@ $(".switch").children().each(function()($(this).off()));
   }
 
   .page-subscribe {
-    padding: 75px 0 28px;
+    padding: 75px 0;
   }
 
   .box-subscribe {
@@ -1885,8 +1896,7 @@ $(".switch").children().each(function()($(this).off()));
 
   .page-plan {
     margin: 0;
-    background-color: #f5faff;
-    padding-top: 85px;
+    padding: 85px 0;
   }
 
   .box-price {
@@ -1898,13 +1908,17 @@ $(".switch").children().each(function()($(this).off()));
     padding: 0;
   }
 
-  .box-price-item {
-    width: 330px;
+  .box-price-item  {
     height: 612px;
+    margin-bottom: 25px;
   }
 
-  .active {
-    width: 100%;
+  .box-price-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .active, .box-price-item {
+    width: 55%;
   }
 
   .box-price-item:after {
@@ -1926,6 +1940,10 @@ $(".switch").children().each(function()($(this).off()));
 }
 
 @media (max-width: 780px) {
+
+  .object-circle, .object-square {
+    display: none;
+  }
 
   .page-stat {
     padding: 74px 0 28px 0;
@@ -2010,6 +2028,9 @@ $(".switch").children().each(function()($(this).off()));
   .btn-group>.btn-secondary {
     padding: 15px 23px;
     font-size: 10px;
+    width: 158.5px;
+    box-sizing: border-box;
+    text-align: center;
   }
 
   .btn-group>.btn-primary {
@@ -2041,7 +2062,7 @@ $(".switch").children().each(function()($(this).off()));
   }
 
   .page-header {
-    padding: 20px 0 20px 0;
+    padding: 20px 0 44px 0;
   }
 
   .btn-free {
@@ -2093,6 +2114,10 @@ $(".switch").children().each(function()($(this).off()));
     margin-top: 40px;
   }
 
+  .box-price-item, .active  {
+    width: 70%;
+  }
+
   .video-app img {
     width: 276px;
   }
@@ -2111,7 +2136,7 @@ $(".switch").children().each(function()($(this).off()));
   }
 
   .page-plan {
-    padding-top: 55px;
+    padding: 55px 0;
   }
 
   .box-clients {
@@ -2166,8 +2191,12 @@ $(".switch").children().each(function()($(this).off()));
   }
 
   .box-team-item {
-    padding: 120px 15px 32px 15px;
-    width: 60%;
+    padding: 100px 15px 32px 15px;
+    width: 315px;
+  }
+
+  .box-team-item .avatar {
+    width: 195px;
   }
 
   .social-team {
@@ -2181,10 +2210,6 @@ $(".switch").children().each(function()($(this).off()));
   .box-team-item .position {
     font-size: 13px;
     margin: 15px 0;
-  }
-
-  .box-team-item .avatar {
-    width: 220px;
   }
 
   .box-price-item {
@@ -2202,15 +2227,6 @@ $(".switch").children().each(function()($(this).off()));
   .object-square {
     width: 225px;
     top: -100px;
-  }
-
-  .object-circle {
-    width: 230px;
-    bottom: -507px;
-  }
-
-  .page-subscribe {
-    padding: 42px 0 28px;
   }
 
   .page-company {
@@ -2232,6 +2248,10 @@ $(".switch").children().each(function()($(this).off()));
 @media (max-width: 480px) {
   .flex-form img, .flex-page-easy>img, .flex-analytics>img {
     display: none;
+  }
+
+  .list-company {
+    flex-direction: column;
   }
 
   .grid {
@@ -2264,7 +2284,7 @@ $(".switch").children().each(function()($(this).off()));
   }
 
   .page-software {
-    padding: 35px 0;
+    padding: 55px 0;
   }
 
   .page-software-flex p {
@@ -2281,16 +2301,6 @@ $(".switch").children().each(function()($(this).off()));
 
   .page-stat span {
     font-size: 44px;
-  }
-
-  .object-circle {
-    width: 161px;
-    bottom: -530px;
-  }
-
-  .object-square {
-    width: 190px;
-    top: -81px;
   }
 
   .page-app {
@@ -2352,10 +2362,6 @@ $(".switch").children().each(function()($(this).off()));
     display: none;
   }
 
-  .page-plan .title-40 {
-    margin-bottom: 0;
-  }
-
   .page-team .wrap, .page-clients .wrap {
     padding-left: 0;
     padding-right: 0;
@@ -2370,7 +2376,7 @@ $(".switch").children().each(function()($(this).off()));
   }
 
   .box-team-item {
-    padding: 276px 15px 36px 15px;
+    padding: 212px 15px 36px 15px;
     margin-bottom: 0;
     width: 100%;
   }
@@ -2382,7 +2388,7 @@ $(".switch").children().each(function()($(this).off()));
 
   .box-team-item .avatar {
     top: 30px;
-    width: 260px;
+    width: 195px;
   }
 
   .box-team-item .name {
@@ -2410,6 +2416,10 @@ $(".switch").children().each(function()($(this).off()));
 
   .list-company {
     justify-content: center;
+  }
+
+  .page-subscribe {
+    padding: 55px 0;
   }
 
   .subscribe-form>button {
@@ -2478,6 +2488,10 @@ $(".switch").children().each(function()($(this).off()));
     padding: 15px 12px;
   }
 
+  .btn-group .btn-secondary {
+    width: 138.05px;
+  }
+
   .box-price-item .btn-info, .active .btn-primary {
     padding: 11px 12px;
   }
@@ -2497,6 +2511,10 @@ $(".switch").children().each(function()($(this).off()));
   .page-stat .title-h2 span, .page-screen .title-40 span, .page-clients .title-40 span, .page-plan .title-40 span, .page-team .title-40 span, .page-gid .title-40 span, .page-subscribe .title-h2 span
   {
     font-size: 10px;
+  }
+
+  .box-price-item, .active {
+    width: 80%;
   }
 
   .box-team-item .name {
@@ -2563,16 +2581,6 @@ $(".switch").children().each(function()($(this).off()));
     max-width: 150px;
   }
 
-  .object-circle {
-    width: 125px;
-    bottom: -557px;
-  }
-
-  .object-square {
-    width: 160px;
-    top: -68px;
-  }
-
   .box-team-item .avatar {
     top: 76px;
     width: 216px;
@@ -2584,7 +2592,7 @@ $(".switch").children().each(function()($(this).off()));
   }
 
   .page-plan {
-    padding-top: 45px;
+    padding: 45px 0;
   }
 
   .box-team-item {
